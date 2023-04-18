@@ -12,12 +12,16 @@ export const StyledButton = styled.button`
     border-radius: 12px;
 
     height: 28px;
-    width: 73px;
+    width: 75px;
     padding:5px;
     margin: 5px;
 
     &:hover {
         opacity: 0.75;
         cursor: pointer;
+    }
+
+    @media (min-width: 768px) {
+        width: 100px;
     }
 `

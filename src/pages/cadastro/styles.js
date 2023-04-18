@@ -21,11 +21,12 @@ export const ContainerFooter = styled.div`
   margin-top: auto;
 `;
 
-export const Wrapper = styled.div`
-  max-width: 300px;
-  margin: 0 45px;
-  padding: 15px;
-`;
+export const ContainerInput = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 
 export const BigText = styled.h3`
   font-size: 24px;
@@ -41,29 +42,19 @@ export const BigText = styled.h3`
   }
 `;
 
-export const SmallText = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 22px;
-
-  margin-top: 55px;
-
-  color: #ffffff;
-
-  a {
-    style: none;
-    color: #e60b0b;
-  }
-`;
-
-export const ContainerImage = styled.div`
+export const Wrapper = styled.div`
+  max-width: 450px;
+  margin: 0 45px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
-
-  img {
-    width: 80%;
-  }
+  justify-content: center;
 `;
+
+export const LineSpace = styled.hr`
+  width: 70%;
+  margin: 35px 0;
+
+  border: 0.5px solid #C5C5C2;
+`
