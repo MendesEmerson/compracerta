@@ -102,7 +102,7 @@ function ListPage() {
               ...listas,
               [categoriaItem]: novaLista,
             });
-            listas.quantidadeItensList += 1;
+            lista.quantidadeItensList += 1;
           },
         },
         {
