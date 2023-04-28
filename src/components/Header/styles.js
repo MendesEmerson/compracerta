@@ -2,24 +2,28 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   height: 55px;
-  width: 100%;
 
   background-color: #acacac;
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
+  @media (min-width: 650px) {
+  }
   
 `;
 
+export const ContainerButton = styled.div`
+  
+  width: 10%;
+ 
+`
+
 export const SvgImage = styled.img`
-  width: 85%;
   height: 45px;
   margin: 5px;
-  margin-left: 15px;
-  margin-right: auto;
 
   @media (min-width: 768px) {
     width: 355px;
@@ -29,8 +33,9 @@ export const SvgImage = styled.img`
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  width: 80%;
 
   background-color: #acacac;
   flex: ${({ flex }) => flex};

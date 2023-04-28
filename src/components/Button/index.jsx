@@ -1,9 +1,9 @@
 import {StyledButton, StyledIconButton} from "./styles"
 
-function ButtonComponent({title, onClick, disabled, variant = "primary"}) {
+function ButtonComponent({icon = null, title, onClick, disabled, variant = "primary"}) {
   return (
     <StyledButton variant={variant} onClick={onClick} disabled={disabled}>
-        {title}
+        {icon}{title}
     </StyledButton>
   )
 }

@@ -4,8 +4,6 @@ export const Container = styled.div`
   width: 100%;
   min-height: 90vh;
 
-  margin-top: 35px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +38,14 @@ export const ContainerList = styled.ul`
   }
 `;
 
+export const ContainerBackButton = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 5%;
+`
+
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
@@ -52,10 +58,14 @@ export const Row = styled.div`
 `
 
 export const TextName = styled.h4`
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
   font-style: normal;
 
   margin: 5px;
   padding: 2px;
+
+  @media (min-width: 650px) {
+    font-size: 32px;
+  }
 `;

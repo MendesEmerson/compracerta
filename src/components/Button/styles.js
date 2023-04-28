@@ -4,6 +4,10 @@ export const StyledButton = styled.button`
   background: #452479;
   color: #ffffff;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;

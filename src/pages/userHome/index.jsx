@@ -22,10 +22,9 @@ function UserHome() {
   const handleOnClickNavigateList = (id) => {
     navigate(`/listpage/${id}`);
   };
-console.log(MockLista)
   return (
     <>
-      <HeaderComponent isLogin={true} />
+      <HeaderComponent isLogin={true} backButton={false}/>
       <Container>
         <ContainerText>
           <TextHome>Bem vindo(a) Fulano de tal...</TextHome>

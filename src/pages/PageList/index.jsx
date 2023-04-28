@@ -97,7 +97,6 @@ function ListPage() {
                 check: false,
               },
             ];
-            console.log(novaLista)
             setListas({
               ...listas,
               [categoriaItem]: novaLista,
@@ -109,7 +108,7 @@ function ListPage() {
           label: "Cancelar",
         },
       ],
-      closeOnClickOutside: false, 
+      closeOnClickOutside: false,
     });
   }
 
@@ -124,7 +123,7 @@ function ListPage() {
 
   return (
     <>
-      <HeaderComponent isLogin={true}/>
+      <HeaderComponent isLogin={true} />
       <Container>
         <Row>
           <TextName>{lista.nomeList}</TextName>
