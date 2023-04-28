@@ -19,8 +19,9 @@ function InputComponent({ leftIcon, name, ...rest }) {
 function InputPasswordComponent({ leftIcon, name, ...rest }) {
   const [showPassword, setShowPassword] = useState(false);
 
-  const handleTogglePassword = () => {
+  const handleTogglePassword = (e) => {
     setShowPassword(!showPassword);
+    e.preventDefault();
   };
 
   return (

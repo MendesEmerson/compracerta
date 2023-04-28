@@ -1,6 +1,6 @@
 import HeaderComponent from "../../components/Header";
 import FooterComponent from "../../components/Footer";
-import {InputComponent, InputPasswordComponent} from "../../components/Input";
+import { InputComponent, InputPasswordComponent } from "../../components/Input";
 import { MdPerson, MdLock, MdEmail } from "react-icons/md";
 import {
   BigText,
@@ -10,31 +10,45 @@ import {
   LineSpace,
   Wrapper,
 } from "./styles";
+import { ButtonComponent } from "../../components/Button";
 
 function CadastroPage() {
+  
   return (
     <>
       <HeaderComponent />
       <Container>
         <Wrapper>
           <BigText>
-            "Bem-vindo ao <a href="#">CompraCerta</a>! Sua nova ferramenta para
-            listas de compras inteligentes."
+            Bem-vindo(a) ao <a href="/">CompraCerta</a>! Sua nova ferramenta
+            para listas de compras inteligentes.
           </BigText>
         </Wrapper>
         <ContainerInput>
           <LineSpace />
           <Wrapper>
-            <InputComponent leftIcon={<MdPerson />} placeholder={"Nome"} type="text"/>
-            <InputComponent leftIcon={<MdEmail />} placeholder={"Email"} type="email"/>
-            <InputPasswordComponent
-              leftIcon={<MdLock />}
-              placeholder={"Senha"}
-            />
-            <InputPasswordComponent
-              leftIcon={<MdLock />}
-              placeholder={"Confirme sua Senha"}
-            />
+            <form>
+              <InputComponent
+                leftIcon={<MdPerson />}
+                placeholder={"Nome"}
+                type="text"
+              />
+              <InputComponent
+                leftIcon={<MdEmail />}
+                placeholder={"Email"}
+                type="email"
+              />
+              <InputPasswordComponent
+                leftIcon={<MdLock />}
+                placeholder={"Senha"}
+              />
+              <InputPasswordComponent
+                leftIcon={<MdLock />}
+                placeholder={"Confirme a Senha"}
+              />
+
+              <ButtonComponent title={"Cadastrar"} variant="secondary" />
+            </form>
           </Wrapper>
           <LineSpace />
         </ContainerInput>

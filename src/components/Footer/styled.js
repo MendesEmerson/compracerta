@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const FooterWrapper = styled.footer`
   padding: 20px;
   text-align: center;
-  background-color: #000000;
+  background-color: #ACACAC;
 `;
 
 export const FooterText = styled.p`
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ACACAC;
 
   font-size: 18px;
 `;

@@ -10,14 +10,14 @@ export const InputContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 20px;
+  margin: 20px 0;
   
   position: relative;
 `;
 
 export const IconeContainer = styled.div` 
   padding: 10px;
- position: absolute; 
+  position: absolute; 
   
 `;
 
@@ -26,7 +26,7 @@ export const InputText = styled.input`
   border-radius: 12px;
   height: 44px;
   width: 100%;
-  min-width: 200px;
+  min-width: 150px;
 
   padding: 0 40px;
 

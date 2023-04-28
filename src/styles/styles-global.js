@@ -9,6 +9,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #221537;
+   background: linear-gradient(180deg, #221537 0%, rgba(101, 46, 192, 0.302083) 76.56%, rgba(130, 56, 251, 0) 100%, rgba(130, 56, 251, 0) 100%)
   }
 `;

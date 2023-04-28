@@ -21,43 +21,28 @@ export const ContainerFooter = styled.div`
   margin-top: auto;
 `;
 
+export const ContainerInput = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 export const Wrapper = styled.div`
-  max-width: 300px;
+  max-width: 450px;
   margin: 0 45px;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
-export const BigText = styled.h3`
-  font-size: 24px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 33px;
+export const LineSpace = styled.hr`
+  width: 70%;
+  margin: 35px 0;
 
-  color: #000000;
-
-  span {
-    style: none;
-    color: #ff0000;
-  }
-`;
-
-export const SmallText = styled.p`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 22px;
-
-  margin-top: 25px;
-
-  color: #000000;
-  
-  
-  
-
-  a {
-    style: none;
-    color: #ff0000;
-  }
+  border: 0.5px solid #353535;
 `;
 
 export const ContainerImage = styled.div`

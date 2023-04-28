@@ -1,11 +1,19 @@
-import {StyledButton} from "./styles"
+import {StyledButton, StyledIconButton} from "./styles"
 
-function ButtonComponent({title, onClick}) {
+function ButtonComponent({title, onClick, disabled, variant = "primary"}) {
   return (
-    <StyledButton onClick={onClick}>
+    <StyledButton variant={variant} onClick={onClick} disabled={disabled}>
         {title}
     </StyledButton>
   )
 }
 
-export default ButtonComponent
+function IconButtonComponent({icon, onClick, disabled}) {
+  return (
+    <StyledIconButton onClick={onClick} disabled={disabled}>
+      {icon}
+    </StyledIconButton>
+  )
+}
+
+export {ButtonComponent, IconButtonComponent}

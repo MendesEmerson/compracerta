@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   min-height: 90vh;
-  
   margin-top: 35px;
-  
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const GridList = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +18,13 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
+    justify-items: center;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1120px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
   }
 `;
 
@@ -27,35 +37,41 @@ export const ContainerInput = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
+
+  margin: 10px;
+`;
+
+export const ContainerText = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 80%;
+
+  margin: 10px;
+
+
 `
 
-export const BigText = styled.h3`
+export const LineSpace = styled.hr`
+  width: 70%;
+  margin: 15px 0;
+  border: 0.5px solid #353535;
+`;
+
+export const TextHome = styled.h2`
   font-size: 24px;
   font-weight: 700;
   font-style: normal;
   line-height: 33px;
 
   color: #000000;
-
-  a {
-    style: none;
-    color: #ff0000;
-  }
 `;
 
-export const Wrapper = styled.div`
-  max-width: 450px;
-  margin: 0 45px;
-  padding: 15px;
+export const Row = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
-
-export const LineSpace = styled.hr`
-  width: 70%;
-  margin: 35px 0;
-
-  border: 0.5px solid #353535;
+  width: 100%;
 `
